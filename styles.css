@@ -22,8 +22,15 @@ body {
     font-weight: 700;
 }
 
-nav {
+nav.menu {
     padding: 15px 10px 0 0;
+    display: none;
+}
+
+@media (min-width: 768px) {
+  nav.menu {
+    display: block;
+  }
 }
 
 .menu ul {
