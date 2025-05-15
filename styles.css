@@ -17,9 +17,15 @@ body {
 }
 
 #logo {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #ff5473;
     font-weight: 700;
+}
+
+@media (min-width: 768px) {
+    #logo {
+        font-size: 2rem;
+    }    
 }
 
 nav.menu {
