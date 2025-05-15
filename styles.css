@@ -13,3 +13,7 @@ body {
     color: #ff5473;
     font-weight: 700;
 }
+
+#desktop-nav ul {
+    display: flex;
+}
