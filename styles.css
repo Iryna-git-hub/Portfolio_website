@@ -119,13 +119,7 @@ nav.menu {
     text-align: center;
     top: 30%;
     position: absolute;
-    width: 90%;
-}
-
-h1 {
-    font-size: 2rem;
-    font-weight: 800;
-    margin-bottom: 1.5rem;            
+    width: 80%;
 }
 
 p {
@@ -134,7 +128,22 @@ p {
     margin-bottom: 2rem;
 }
 
- 
+h1 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;            
+}
+
+@media (min-width: 768px) {
+  .hero-block {
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+  
+} 
 
 .color-x {
     color: #ff5473;
