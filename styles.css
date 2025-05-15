@@ -160,4 +160,35 @@ h1 {
     padding: 10px 20px;
     border: 1px solid #fff;
     margin: 0 10px;
+    
+}
+
+.hero-btn a:hover, .hero-btn a:active {
+    border: 1px solid #ff5473;
+    transition: all 0.4s ease;
+}
+
+.fade {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+.fade-1 {
+  animation-delay: 0.3s;
+}
+
+.fade-2 {
+  animation-delay: 1s;
+}
+
+.fade-3 {
+  animation-delay: 1.7s;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
