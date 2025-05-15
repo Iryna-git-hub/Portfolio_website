@@ -1,11 +1,19 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    background: #41434c;
+    background: #2a3132;
     font-family: "Space Grotesk", sans-serif;
+    color: #fff;
+}
+
+.top-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #logo {
@@ -14,6 +22,123 @@ body {
     font-weight: 700;
 }
 
-#desktop-nav ul {
-    display: flex;
+nav {
+    padding: 15px 10px 0 0;
+}
+
+header {
+    z-index: 10;
+    position: relative;
+    padding: 30px 50px;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  padding: 0;
+  margin: 0;
+}
+
+.menu a {
+  position: relative;
+  text-decoration: none;
+  font-size: 18px;
+  color: #ffffff;
+  padding-left: 25px; /* space for the circle */
+  display: inline-block;
+  font-weight: 700;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Circle on the left */
+.menu a::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 10px;
+  height: 10px;
+  background: #ff5473;
+  border-radius: 50%;
+  transform: translateY(150%) scale(0); /* hidden below baseline */
+  opacity: 0;
+  transition: all 0.2s ease;
+}
+
+/* Animation on hover */
+.menu a:hover::before {
+  transform: translateY(-50%) scale(1); /* slide up and appear */
+  opacity: 1;
+}
+
+
+
+        .gradient-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            overflow: hidden;
+        }
+
+      
+
+       
+
+        .particles-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 3;
+            pointer-events: none;
+        }
+
+        .particle {
+            position: absolute;
+            background: white;
+            border-radius: 50%;
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .hero-container {
+            position: relative;
+            z-index: 10;
+            text-align: center;
+            padding: 2rem;
+            height: 100vh; 
+            
+        }
+
+        .hero-block {
+            justify-content: center;  
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+
+ 
+
+.color-x {
+    color: #ff5473;
 }
