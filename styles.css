@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #41434c;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+#logo {
+    font-size: 2rem;
+    color: #ff5473;
+    font-weight: 700;
+}
