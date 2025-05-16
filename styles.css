@@ -411,7 +411,7 @@ main section {
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+  grid-template-columns: repeat(auto-fit, minmax(95px, 1fr)); 
   gap: 20px;
   padding: 20px;
   width: 100%;
@@ -440,4 +440,10 @@ main section {
 .grid-item p {
   font-weight: 600;
   margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+  }
 }
