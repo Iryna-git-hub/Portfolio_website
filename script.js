@@ -102,3 +102,8 @@ const menuToggle = document.getElementById('menuToggle');
 
     observer.observe(animatedText);
 
+ 
+
+  document.querySelectorAll('.about-img img').forEach(img => {
+    observer.observe(img);
+  });
