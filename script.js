@@ -104,6 +104,3 @@ const menuToggle = document.getElementById('menuToggle');
 
  
 
-  document.querySelectorAll('.about-img img').forEach(img => {
-    observer.observe(img);
-  });
