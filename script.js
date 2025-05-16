@@ -74,13 +74,13 @@ const menuToggle = document.getElementById('menuToggle');
   const mobileMenu = document.getElementById('mobileMenu');
   const menuLinks = mobileMenu.querySelectorAll('a');
 
-  // Открытие/закрытие по кнопке
+  // Toggle menu open/close when clicking the button
   menuToggle.addEventListener('click', () => {
     menuToggle.classList.toggle('open');
     mobileMenu.classList.toggle('open');
   });
 
-  // Закрытие при клике на пункт меню
+  // Close the menu when any link inside the menu is clicked
   menuLinks.forEach(link => {
     link.addEventListener('click', () => {
       mobileMenu.classList.remove('open');
