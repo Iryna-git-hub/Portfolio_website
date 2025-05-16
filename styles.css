@@ -291,6 +291,10 @@ main h2 {
   font-size: 2rem;
 }
 
+main h2 span {
+  color: #ff5473;
+}
+
 main section {
   margin-bottom: 6rem;
 }
