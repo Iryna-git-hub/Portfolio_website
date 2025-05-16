@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     background: #2a3132;
     font-family: "Space Grotesk", sans-serif;
@@ -296,7 +300,7 @@ main h2 span {
 }
 
 main section {
-  margin-bottom: 6rem;
+  margin: 2rem 0 10rem;
 }
 
 @media (min-width: 768px) {
@@ -305,3 +309,26 @@ main section {
         font-size: 3rem;
       }
     }
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+  .text-section {
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+  
+  .text-section.visible {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+@media (min-width: 768px) {
+  #about, #skills, #projects, #contact {
+    scroll-margin-top: 80px; 
+  }
+}  
+
+ 
