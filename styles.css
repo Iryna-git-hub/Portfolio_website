@@ -119,13 +119,16 @@ nav.menu {
 }
 
 .hero-block {
-    justify-content: center;  
-    align-items: center;
     color: white;
     text-align: center;
-    top: 20%;
-    position: absolute;
-    width: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    height: 90%;
 }
 
 p {
@@ -141,18 +144,10 @@ h1 {
     line-height: 1.7;          
 }
 
-@media (min-width: 768px) {
-  .hero-block {
-    width: 90%;
-    top: 30%;
-  }
-
   h1 {
     font-size: 2rem;
-  }
+}
   
-} 
-
 .color-x {
     color: #ff5473;
 }
@@ -184,7 +179,7 @@ h1 {
 }
 
 .fade-3 {
-  animation-delay: 1.7s;
+  animation-delay: 2.7s;
 }
 
 @keyframes fadeInUp {
