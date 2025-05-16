@@ -319,7 +319,7 @@ main section {
   .text-section {
     opacity: 0;
     transform: translateX(-20px);
-    transition: opacity 0.8s ease, transform 0.8s ease;
+    transition: opacity 1s ease, transform 1s ease;
   }
   
   .text-section.visible {
@@ -330,6 +330,10 @@ main section {
 @media (min-width: 768px) {
   #about, #skills, #projects, #contact {
     scroll-margin-top: 80px; 
+  }
+
+  main, .hero-container {
+    padding: 2rem 4rem;
   }
 }  
 
@@ -360,6 +364,11 @@ main section {
   position: absolute;
   max-width: 40%;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.4s ease;
+}
+
+.about-img img:hover {
+  transform: scale(1.05); 
 }
 
 /* Overlapping positions */
@@ -381,10 +390,6 @@ main section {
 
 /* Responsive layout */
 @media (max-width: 768px) {
-/*  .flex-wrap {
-    flex-direction: column;
-  }
-*/
   .about-text,
   .about-img {
     flex: 1 1 100%;
@@ -404,4 +409,35 @@ main section {
     border: 10px solid #ff5473;
   }
 
- 
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+  gap: 20px;
+  padding: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto; 
+}
+
+.grid-item {
+  border: 2px dashed rgba(255, 255, 255, 0.1);
+  background-color: transparent;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  cursor: default;
+}
+
+.grid-item:hover {
+  transform: scale(1.05);
+}
+
+.grid-item img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+.grid-item p {
+  font-weight: 600;
+}
