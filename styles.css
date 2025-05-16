@@ -383,10 +383,10 @@ main section {
 
 /* Responsive layout */
 @media (max-width: 768px) {
-  .flex-wrap {
+/*  .flex-wrap {
     flex-direction: column;
   }
-
+*/
   .about-text,
   .about-img {
     flex: 1 1 100%;
@@ -398,7 +398,7 @@ main section {
   }
 
   .about-img img {
-    max-width: 40%;
+    max-width: 50%;
   }
 }
 
