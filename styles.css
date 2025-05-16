@@ -37,6 +37,9 @@ nav.menu {
   nav.menu {
     display: block;
   }
+  .mob-menu {
+    display: none;
+  }
 }
 
 .menu ul {
@@ -145,11 +148,12 @@ h1 {
 }
 
   h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
   
 .color-x {
     color: #ff5473;
+    font-size: 2.8rem;
 }
 
 .hero-btn a {
