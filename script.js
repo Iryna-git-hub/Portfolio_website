@@ -70,13 +70,24 @@
       
             
      
-    const menuToggle = document.getElementById('menuToggle');
-    const mobileMenu = document.getElementById('mobileMenu');
+const menuToggle = document.getElementById('menuToggle');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const menuLinks = mobileMenu.querySelectorAll('a');
 
-    menuToggle.addEventListener('click', () => {
-      menuToggle.classList.toggle('open');
-      mobileMenu.classList.toggle('open');
+  // Открытие/закрытие по кнопке
+  menuToggle.addEventListener('click', () => {
+    menuToggle.classList.toggle('open');
+    mobileMenu.classList.toggle('open');
+  });
+
+  // Закрытие при клике на пункт меню
+  menuLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu.classList.remove('open');
+      menuToggle.classList.remove('open');
     });
+  });
+  
 
     const animatedText = document.getElementById('animatedText');
 
