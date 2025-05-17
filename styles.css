@@ -457,3 +457,16 @@ main section {
     font-size: 1.1rem;
   }
 }
+
+.project-image-container {
+  background-color: #ff5473;
+  padding: 3rem 5rem 3rem 0;
+  position: relative;
+  left: -4rem;
+  width: 70%;
+}
+
+.project-image-image {  
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+  transition: transform 0.4s ease;
+}
