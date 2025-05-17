@@ -290,7 +290,7 @@ h1 {
 
 
 main {
-      padding: 2rem;
+      padding: 2rem;      
 }
 
 main h2 {
@@ -420,7 +420,6 @@ main section {
   gap: 20px;
   padding: 20px;
   width: 100%;
-  max-width: 1200px;
   margin: 0 auto; 
 }
 
@@ -459,7 +458,7 @@ main section {
 }
 
 .project-image-container {
-  background-color: #ff5473;
+  background-color: #45262c;
   padding: 3rem 5rem 3rem 0;
   position: relative;
   left: -4rem;
@@ -469,4 +468,25 @@ main section {
 .project-image-image {  
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
   transition: transform 0.4s ease;
+}
+
+.project-info a {
+    display: inline-block;
+    padding: 10px 20px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    border-image: initial;
+    margin: 0px 10px 20px;
+    min-width: 120px;
+    text-align: center;
+}
+
+.project-info a:hover {
+  border-color: #ff5473;
+}
+
+h3 {
+      font-size: 2rem;
+    margin-bottom: 1rem;
 }
