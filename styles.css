@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -400,8 +401,12 @@ main section {
     min-height: 190px;    
   }
 
+
+}
+
+@media (max-width: 500px) {
   .about-img img {
-    max-width: 60%;
+    max-width: 50%;
   }
 }
 
@@ -439,11 +444,17 @@ main section {
 
 .grid-item p {
   font-weight: 600;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
+  font-size: 0.8rem;
 }
 
 @media (min-width: 768px) {
   .grid-container {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));     
+  }
+
+  .grid-item p {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
   }
 }
