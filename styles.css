@@ -16,6 +16,10 @@ body {
     line-height: 1.5;
 }
 
+.main-padding {
+  padding: 2rem;
+}
+
 .top-wrap {
     display: flex;
     justify-content: space-between;
@@ -122,7 +126,6 @@ nav.menu {
     position: relative;
     z-index: 10;
     text-align: center;
-    padding: 2rem;
     height: 100vh; 
             
 }
@@ -289,10 +292,6 @@ h1 {
 
 
 
-main {
-      padding: 2rem;      
-}
-
 main h2 {
   margin-bottom: 2rem;
   font-size: 2rem;
@@ -300,10 +299,6 @@ main h2 {
 
 main h2 span {
   color: #ff5473;
-}
-
-main section {
-  margin: 2rem 0 10rem;
 }
 
 @media (min-width: 768px) {
@@ -330,10 +325,14 @@ main section {
 
 @media (min-width: 768px) {
   #about, #skills, #projects, #contact {
-    scroll-margin-top: 80px; 
+    scroll-margin-top: 50px; 
   }
 
-  main, .hero-container {
+  .main-padding {
+    padding: 4rem 4rem 10rem;
+  }
+
+  .main-hero-padding {
     padding: 2rem 4rem;
   }
 }  
@@ -424,7 +423,7 @@ main section {
 }
 
 .grid-item {
-  border: 2px dashed rgba(255, 255, 255, 0.1);
+  border: 2px dashed rgb(184 184 184 / 40%);
   padding: 1rem;
   text-align: center;
   transition: transform 0.3s ease;
@@ -494,4 +493,10 @@ h3 {
   display: block;
   width: 100%;
   height: 80px;
+}
+
+.bg-fff {
+  background: #fff;
+  color: #2a3132;
+
 }
