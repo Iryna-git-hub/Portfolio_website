@@ -17,7 +17,7 @@ body {
 }
 
 .main-padding {
-  padding: 2rem;
+  padding: 4rem 2rem;
 }
 
 .top-wrap {
@@ -464,8 +464,8 @@ main h2 span {
 }
 
 .grid-item img {
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   margin: 0 auto 5px;
 }
 
@@ -490,6 +490,11 @@ main h2 span {
   .grid-container {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));     
   }
+
+  .grid-item img {
+  width: 80px;
+  height: 80px;
+}
 
   .grid-item p {
     font-size: 1.1rem;
