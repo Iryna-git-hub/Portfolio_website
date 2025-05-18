@@ -166,16 +166,20 @@ h1 {
     line-height: 1;
 }
 
-.hero-btn a {
+.hero-btn a, .project-info a {
     padding: 10px 20px;
-    border: 1px solid #fff;
+    border: 1px solid #ffffff;
+    color: #ffffff;
     margin: 0 10px 20px;
     display: inline-block;
+    transition: all 0.4s ease;
+    font-weight: 600;
 }
 
-.hero-btn a:hover, .hero-btn a:active {
+.hero-btn a:hover, .hero-btn a:active, .project-info a:hover,.project-info a:active {
+    transform: scale(1.1);
+    color: #ff5473;
     border: 1px solid #ff5473;
-    transition: all 0.4s ease;
 }
 
 .fade {
@@ -314,16 +318,15 @@ main h2 span {
 
   .text-section {
     opacity: 0;
-    transform: translateX(-20px);
+    transform: translateX(-80px);
     transition: opacity 1s ease, transform 1s ease;
+
+    animation: fadeInUp 3s forwards;
+    animation-timeline: view();
+    animation-range: entry 10% cover 50%;
   }
   
-  .text-section.visible {
-    opacity: 1;
-    transform: translateX(0);
-  }
-
-  .main-hero-padding {
+   .main-hero-padding {
     padding: 2rem;
   }
 
@@ -415,6 +418,13 @@ main h2 span {
 
   .about-img {
     border: 10px solid #ff5473;
+    opacity: 0;
+    transform: translateX(60px);
+    transition: opacity 1s ease, transform 1s ease;
+
+    animation: fadeInUp 3s forwards;
+    animation-timeline: view();
+    animation-range: entry 10% cover 50%;
   }
 
 .grid-container {
@@ -499,14 +509,11 @@ main h2 span {
     display: inline-block;
     padding: 10px 20px;
     border: 1px solid ;
-    border-style: solid rgb(255, 255, 255);
+    border-style: solid rgb(42, 49, 50);
+    color: #2a3132;
     margin: 0px 10px 20px;
     min-width: 120px;
     text-align: center;
-}
-
-.project-info a:hover {
-  border-color: #ff5473;
 }
 
 h3 {
