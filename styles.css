@@ -423,7 +423,7 @@ main h2 span {
   .about-img {
     border: 10px solid #ff5473;
     opacity: 0;
-    transform: translateX(30px);
+    transform: translateX(20px);
     transition: opacity 1s ease, transform 1s ease;
 
     animation: fadeInUp 3s forwards;
