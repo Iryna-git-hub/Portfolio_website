@@ -359,7 +359,7 @@ main h2 span {
 /* Text block */
 .about-text {
   flex: 1 1 45%;
-  font-size: 1rem;
+  font-size: 1.2rem;
   line-height: 1.6;
 }
 
@@ -423,7 +423,7 @@ main h2 span {
   .about-img {
     border: 10px solid #ff5473;
     opacity: 0;
-    transform: translateX(60px);
+    transform: translateX(40px);
     transition: opacity 1s ease, transform 1s ease;
 
     animation: fadeInUp 3s forwards;
@@ -558,7 +558,7 @@ h3 {
   }
 
   .project-info p {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .project-info {
