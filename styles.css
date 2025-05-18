@@ -140,7 +140,7 @@ nav.menu {
     flex-wrap: wrap;
     flex-direction: column;
     align-content: center;
-    height: 90%;
+    height: 80%;
 }
 
 p {
@@ -450,6 +450,11 @@ main h2 span {
   margin-bottom: 0;
 }
 
+.project-image-container {
+  position: relative;
+  left: 2rem;
+}
+
 @media (min-width: 768px) {
   .grid-container {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));     
@@ -458,11 +463,11 @@ main h2 span {
   .grid-item p {
     font-size: 1.1rem;
   }
+
+  .project-image-container {
+  left: 4rem;
 }
 
-.project-image-container {
-  position: relative;
-  left: 4rem;
 }
 
 .project-image-image {  
