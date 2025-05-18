@@ -352,6 +352,10 @@ main h2 span {
   gap: 5rem;
 }
 
+.project-wrap {
+  padding: 3rem 0;
+}
+
 /* Text block */
 .about-text {
   flex: 1 1 45%;
@@ -427,7 +431,7 @@ main h2 span {
     animation-range: entry 10% cover 50%;
   }
 
-.grid-container {
+ .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(95px, 1fr)); 
   gap: 20px;
@@ -486,6 +490,50 @@ main h2 span {
   animation-range: entry 10% cover 50%;
 }
 
+.project-info p {
+  font-size: 1rem;
+}
+
+.project-image-image {  
+  transition: transform 0.4s ease;
+}
+
+.project-info {
+  width: 100%;
+  align-content: center;
+}
+
+.project-image-container {
+  width: 100%;
+}
+
+.project-info a {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid ;
+    border-style: solid rgb(42, 49, 50);
+    color: #2a3132;
+    margin: 0px 20px 20px 0;
+    min-width: 120px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.bg-fff {
+  background: #fff;
+  color: #2a3132;
+}
+
+.project-info p {
+  border-left: 3px solid #ff5473;
+  padding-left: 1.2rem;
+  display: inline-block;
+}
+
 @media (min-width: 768px) {
   .grid-container {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));     
@@ -507,35 +555,24 @@ main h2 span {
   .project {
   display: flex;
   gap: 20px;
+  }
 
+  .project-info p {
+    font-size: 1.2rem;
+  }
+
+  .project-info {
+  width: 40%;
+
+  h3 {
+    font-size: 2rem;
+}
+
+.project-image-container {
+  width: 60%;
+}
 }
 
 }
 
-.project-image-image {  
-  transition: transform 0.4s ease;
-}
 
-.project-info a {
-    display: inline-block;
-    padding: 10px 20px;
-    border: 1px solid ;
-    border-style: solid rgb(42, 49, 50);
-    color: #2a3132;
-    margin: 0px 10px 20px;
-    min-width: 120px;
-    text-align: center;
-}
-
-h3 {
-      font-size: 2rem;
-    margin-bottom: 1rem;
-}
-
-
-
-.bg-fff {
-  background: #fff;
-  color: #2a3132;
-
-}
