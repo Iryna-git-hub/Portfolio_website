@@ -432,10 +432,25 @@ main h2 span {
   text-align: center;
   transition: transform 0.3s ease;
   cursor: default;
+  
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeInUp 3s forwards;
+  animation-timeline: view();
+  animation-range: entry 50% cover 70%;
+
 }
 
 .grid-item:hover {
   transform: scale(1.05);
+}
+
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .grid-item img {
@@ -453,6 +468,12 @@ main h2 span {
 .project-image-container {
   position: relative;
   left: 2rem;
+  
+  opacity: 0;
+  transform: translateY(80px);
+  animation: fadeInUp 3s forwards;
+  animation-timeline: view();
+  animation-range: entry 10% cover 50%;
 }
 
 @media (min-width: 768px) {
