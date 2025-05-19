@@ -576,5 +576,50 @@ h3 {
   top: -8rem;
 }
 
+footer {
+  text-align: center;
+}
 
+footer p {
+  font-size: 0.9rem;
+}
 
+.boldP {
+  font-weight: 700;
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+}
+
+.underP {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.social-icon {
+  height: 47px;
+  width: 47px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 100%;
+  background-color: transparent;
+  margin: 0 0.2rem;
+  display: inline-block;
+  transition: all 0.5s ease;
+}
+
+.social-icon:hover {
+  border: 2px solid rgba(255, 255, 255);
+  background-color: #fff;
+}
+
+.social-icon svg {
+  fill: #fff;
+  transition: all 0.3s ease;
+  height: 30px;
+  width: 30px;
+  margin: 6px auto;
+  transition: all 0.5s ease;
+}
+
+.social-icon:hover svg {
+  fill: #ab3148;
+}
