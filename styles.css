@@ -425,6 +425,7 @@ main h2 span {
     opacity: 0;
     transform: translateX(20px);
     transition: opacity 1s ease, transform 1s ease;
+    border-radius: 0 50px;
 
     animation: fadeInUp 3s forwards;
     animation-timeline: view();
@@ -496,6 +497,11 @@ main h2 span {
 
 .project-image-image {  
   transition: transform 0.4s ease;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.project-image-image:hover {
+  transform: scale(1.05);
 }
 
 .project-info {
@@ -529,6 +535,26 @@ h3 {
   display: block;
 }
 
+.top-contact {
+  background: #ab3148;
+  padding: 2rem 2rem 2rem 3rem;
+  color: #fff;
+  position: relative;
+  top: -8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 30px;
+  border-radius: 0 50px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+ .project {
+  display: flex;
+  flex-direction: column;
+  }
+
 @media (min-width: 768px) {
   .grid-container {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));     
@@ -548,7 +574,7 @@ h3 {
   }
 
   .project {
-  display: flex;
+  flex-direction: row;
   }
 
   .project-info p {
@@ -566,15 +592,14 @@ h3 {
   .project-info a {
     min-width: 120px;
   }
+
+  .top-contact {
+    flex-direction: row;
+  }
 }
 
-.top-contact {
-  background: #ab3148;
-  padding: 2rem;
-  color: #fff;
-  position: relative;
-  top: -8rem;
-}
+
+
 
 footer {
   text-align: center;
@@ -593,6 +618,7 @@ footer p {
 .underP {
   font-size: 1rem;
   margin-bottom: 0.5rem;
+  opacity: 0.7;
 }
 
 .social-icon {
