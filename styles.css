@@ -746,3 +746,8 @@ input:focus, textarea:focus {
 #contact {
   padding-bottom: 4rem;
 }
+
+.mobile-menu .social-icons {
+    justify-content: center;
+    margin-top: 4rem;
+}
