@@ -140,7 +140,13 @@ nav.menu {
     flex-wrap: wrap;
     flex-direction: column;
     align-content: center;
+    height: 90%;
+}
+
+@media (min-width: 768px) {
+  .hero-block {
     height: 80%;
+  }
 }
 
 p {
