@@ -543,7 +543,7 @@ h3 {
   top: -8rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   flex-direction: column;
   gap: 30px;
   border-radius: 0 50px;
@@ -612,13 +612,17 @@ footer p {
 .boldP {
   font-weight: 700;
   font-size: 1.7rem;
-  margin-bottom: 1rem;
+  margin: 0;
 }
 
 .underP {
   font-size: 1rem;
   margin-bottom: 0.5rem;
   opacity: 0.7;
+}
+
+.social-icons {
+  display: flex;
 }
 
 .social-icon {
@@ -628,8 +632,10 @@ footer p {
   border-radius: 100%;
   background-color: transparent;
   margin: 0 0.2rem;
-  display: inline-block;
   transition: all 0.5s ease;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .social-icon:hover {
@@ -640,8 +646,6 @@ footer p {
 .social-icon svg {
   fill: #fff;
   transition: all 0.3s ease;
-  height: 30px;
-  width: 30px;
   margin: 6px auto;
   transition: all 0.5s ease;
 }
