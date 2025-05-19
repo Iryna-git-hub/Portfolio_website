@@ -135,7 +135,7 @@ nav.menu {
     text-align: center;
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
     flex-direction: column;
@@ -146,6 +146,7 @@ nav.menu {
 @media (min-width: 768px) {
   .hero-block {
     height: 80%;
+    justify-content: center;
   }
 }
 
