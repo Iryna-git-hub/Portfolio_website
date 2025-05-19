@@ -219,18 +219,37 @@
             </div>
 
             <h2>Contact<span>.</span></h2>
-            <p class="underP">Let’s turn ideas into interactive experiences.</p>
-            <p class="underP">Send me a message, and let’s make it happen!</p>
-            <div class="flex-wrap">
-                <div></div>
+            
+            <div class="contact-form-wrap">
+                <p class="underP">Let’s turn ideas into interactive experiences.</p>
+                <p class="underP">Send me a message, and let’s make it happen!</p>
 
+                 <form id="contact-form">
+                        <section class="form-group">
+                            <label id="name-label" for="name">Name</label>
+                            <input id="name" class="form-control" type="text" placeholder="Martin" required>
+                        </section>
+                        <section class="form-group">
+                            <label id="email-label" for="email">Email</label>
+                            <input id="email" class="form-control" type="email" placeholder="martin@email.com" required>
+                        </section>
+                        <section class="form-group">
+                            <label for="comments">Message</label>
+                            <textarea id="comments" class="form-control" name="comments" placeholder="Type your message here" rows="5" cols="40"></textarea>
+                        </section>
+                        <section class="form-group">
+                            <button id="submit" class="form-control submit-button">Submit</button>
+                        </section>
+
+                    </form>              
             </div>
         </section>
              
 
 
     </main>
-    <footer>
+    <footer>       
+        <div id="logo"><a href="/">./iryna</a></div>
         <p>Handcrafted by me &copy; twentytwentyfive</p>
     </footer>
 

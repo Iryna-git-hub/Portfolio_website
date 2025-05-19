@@ -653,3 +653,77 @@ footer p {
 .social-icon:hover svg {
   fill: #ab3148;
 }
+
+footer #logo {
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+}
+
+.contact-form-wrap {
+  margin: 0 auto;
+  max-width: 640px;
+}
+
+.contact-form-wrap p {
+  text-align: center;
+}
+
+#contact-form {
+  margin-top: 2rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group input, .form-group textarea {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 1rem;
+}
+
+.form-group label {
+  font-size: 1.2rem;
+  margin: 20px 0 10px;
+  opacity: 0.6;
+}
+
+input, textarea {
+  caret-color: #ff5473;
+  color: #ffffff;
+  font-size: 1.2rem;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #566365; 
+  opacity: 1; 
+}
+
+input:hover, textarea:hover {
+  border: 1px solid #ff5473;
+}
+
+input:focus, textarea:focus {
+  border: 1px solid #ff5473;
+  box-shadow: 0 0 3px 0 #ff5473;
+}
+
+.form-group button {
+  cursor: pointer;
+  color: #2a3132;
+  font-size: 1.2rem;
+  background-color: #fff;
+  margin: 50px auto 0;
+  padding: 1rem 0;
+  width: 50%;
+  transition: all 0.3s ease;
+}
+
+.form-group button:hover, .form-group button:active {
+  background-color: #ff5473;
+  color: #fff;
+}
+
+#contact {
+  padding-bottom: 4rem;
+}
