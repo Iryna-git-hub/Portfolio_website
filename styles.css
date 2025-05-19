@@ -156,6 +156,12 @@ h1 {
     line-height: 1.7;          
 }
 
+@media (min-width: 768px) {
+  h1 {
+    margin-bottom: 3.5rem;
+  }
+}
+
   h1 {
     font-size: 1.8rem;
 }
