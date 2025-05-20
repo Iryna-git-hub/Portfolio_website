@@ -705,6 +705,7 @@ input, textarea {
   caret-color: #ff5473;
   color: #ffffff;
   font-size: 1.2rem;
+  background-color: #2a3132;
 }
 
 input::placeholder, textarea::placeholder {
@@ -719,6 +720,13 @@ input:hover, textarea:hover {
 input:focus, textarea:focus {
   border: 1px solid #ff5473;
   box-shadow: 0 0 3px 0 #ff5473;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: none !important;
+  -webkit-text-fill-color: white !important;
+  caret-color: #ff5473;
+  transition: background-color 5000s ease-in-out 0s;
 }
 
 .form-group button {
@@ -756,3 +764,4 @@ input:focus, textarea:focus {
     transform: rotate(90deg);
   }
 }
+
