@@ -746,3 +746,13 @@ input:focus, textarea:focus {
     justify-content: center;
     margin-top: 4rem;
 }
+
+.arrow-icon {
+  transition: transform 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .arrow-icon {
+    transform: rotate(90deg);
+  }
+}
