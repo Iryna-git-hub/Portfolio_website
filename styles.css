@@ -714,7 +714,7 @@ input::placeholder, textarea::placeholder {
 }
 
 input:hover, textarea:hover {
-  border: 1px solid #ff5473;
+  border: 1px solid #d1d1d1;
 }
 
 input:focus, textarea:focus {
