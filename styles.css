@@ -210,7 +210,7 @@ h1 {
 }
 
 .fade-3 {
-  animation-delay: 2.7s;
+  animation-delay: 2s;
 }
 
 @keyframes fadeInUp {
