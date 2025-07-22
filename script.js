@@ -46,7 +46,7 @@
             
             // Random animation properties
             const duration = Math.random() * 10 + 10;
-            const delay = Math.random() * 0.5;
+            const delay = Math.random() * 5;
             
             // Animate with GSAP-like timing
             setTimeout(() => {
@@ -64,7 +64,7 @@
                 setTimeout(() => {
                     animateParticle(particle);
                 }, duration * 1000);
-            }, delay * 0);
+            }, delay * 1000);
         }
         
       
