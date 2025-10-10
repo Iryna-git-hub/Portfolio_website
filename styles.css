@@ -513,6 +513,10 @@ main h2 span {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
+.project-first {
+  box-shadow: 0 4px 20px rgb(13 128 84 / 30%);
+}
+
 .project-image-image:hover {
   transform: scale(1.05);
 }
