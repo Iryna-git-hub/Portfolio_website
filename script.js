@@ -48,7 +48,7 @@
             const duration = Math.random() * 10 + 10;
             const delay = Math.random() * 5;
             
-            // Animate with GSAP-like timing
+            // Animate with timing
             setTimeout(() => {
                 particle.style.transition = `all ${duration}s linear`;
                 particle.style.opacity = Math.random() * 0.3 + 0.1;
@@ -69,10 +69,10 @@
         
       
             
-     
+// Toggle menu animation section     
 const menuToggle = document.getElementById('menuToggle');
-  const mobileMenu = document.getElementById('mobileMenu');
-  const menuLinks = mobileMenu.querySelectorAll('a');
+const mobileMenu = document.getElementById('mobileMenu');
+const menuLinks = mobileMenu.querySelectorAll('a');
 
   // Toggle menu open/close when clicking the button
   menuToggle.addEventListener('click', () => {
