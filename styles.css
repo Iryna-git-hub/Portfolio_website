@@ -575,9 +575,12 @@ input:-webkit-autofill {
   transition: transform 0.3s ease;
 }
 
-/* ========== GROUPED MEDIA QUERIES ========== */
+@media (max-width: 360px) {
+  .hero-btn a, .project-info a {
+    margin: 0 4px 20px;
+  }
+}  
 
-/* --- min-width: 768px --- */
 @media (min-width: 768px) {
   #logo {
     font-size: 2rem;
