@@ -15,6 +15,13 @@ body {
   line-height: 1.5;
 }
 
+/*
+section {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+  */
+
 .main-padding {
   padding: 4rem 2rem;
 }
@@ -309,7 +316,6 @@ main h2 span {
   font-size: 1.2rem;
   line-height: 1.6;
 }
-
 
 .about-img {
   flex: 1 1 45%;
@@ -664,13 +670,6 @@ input:-webkit-autofill {
     font-size: 3rem;
   }
 
-  #about,
-  #skills,
-  #projects,
-  #contact {
-    scroll-margin-top: 50px;
-  }
-
   .main-padding {
     padding: 4rem 4rem 10rem;
   }
@@ -741,4 +740,3 @@ input:-webkit-autofill {
     display: block;
   }
 }
-
