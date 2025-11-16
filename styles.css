@@ -731,11 +731,6 @@ input:-webkit-autofill {
     flex: 1 1 100%;
   }
 
-  .about-img {
-    margin-top: 2rem;
-    min-height: 190px;
-  }
-
   .arrow-icon {
     transform: rotate(90deg);
   }
@@ -747,8 +742,3 @@ input:-webkit-autofill {
   }
 }
 
-@media (max-width: 500px) {
-  .about-img img {
-    max-width: 50%;
-  }
-}
