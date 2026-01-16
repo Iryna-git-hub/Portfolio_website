@@ -85,3 +85,65 @@ menuLinks.forEach((link) => {
     menuToggle.classList.remove("open");
   });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById("contact-form");
+  const status = document.getElementById("form-status");
+  const submitBtn = form.querySelector("button[type='submit']");
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    // clear previous status
+    showStatus("", "");
+
+    // client-side validation (optional extra)
+    if (!form.checkValidity()) {
+      showStatus("Please fill in all required fields.", "error");
+      return;
+    }
+
+    submitBtn.disabled = true;
+    submitBtn.textContent = "Sending...";
+
+    const formData = new FormData(form);
+
+    try {
+      const res = await fetch(form.action, {
+        method: "POST",
+        body: formData,
+        headers: { Accept: "application/json" }, // ask Formspree for JSON response
+      });
+
+      if (res.ok) {
+        form.reset();
+        showStatus("Thanks! Your message has been sent.", "success");
+      } else {
+        // attempt to read JSON error details
+        const data = await res.json().catch(() => ({}));
+        const message = data.error || "Oops — something went wrong. Please try again.";
+        showStatus(message, "error");
+      }
+    } catch (err) {
+      showStatus("Network error — please check your connection and try again.", "error");
+    } finally {
+      submitBtn.disabled = false;
+      submitBtn.textContent = "Send";
+    }
+  });
+
+  // showStatus(message, type) where type is 'success' or 'error' or ''
+  function showStatus(message, type) {
+    status.textContent = message;
+    status.className = type; // style via CSS
+    if (type === "success") {
+      // auto-hide success after a while (optional)
+      setTimeout(() => {
+        // only clear if it hasn't been changed
+        if (status.className === "success") {
+          status.textContent = "";
+          status.className = "";
+        }
+      }, 7000);
+    }
+  }
+});

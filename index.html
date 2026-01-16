@@ -310,7 +310,7 @@
             <div class="contact-form-wrap">
                 <p class="underP">Send me a message, and let’s make it happen!</p>
 
-                 <form class="contact-form" action="https://formspree.io/f/mdaaanwv"
+                 <form id="contact-form" class="contact-form" action="https://formspree.io/f/mdaaanwv"
   method="POST">
                         <section class="form-group">
                             <label id="name-label" for="name">Name</label>
@@ -327,6 +327,8 @@
                         <section class="form-group">
                             <button id="submit" type="submit" class="form-control submit-button">Submit</button>
                         </section>
+                        <!-- status area appears under the button -->
+                        <div id="form-status" aria-live="polite" role="status"></div>
 
                     </form>              
             </div>

@@ -740,3 +740,30 @@ input:-webkit-autofill {
     display: block;
   }
 }
+
+/* Submit form message*/
+#form-status {
+  margin-top: 0.5rem;
+  min-height: 1.2em; /* reserve a little space so layout doesn't jump */
+  transition: opacity 180ms ease;
+  opacity: 1;
+  font-size: 0.95rem;
+}
+
+#form-status.success {
+  color: #155724;
+  background: #d4edda;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+}
+#form-status.error {
+  color: #721c24;
+  background: #f8d7da;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+}
+
+/* optional: subtle fade-in */
+#form-status:not(:empty) {
+  opacity: 1;
+}
