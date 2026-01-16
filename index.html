@@ -310,21 +310,22 @@
             <div class="contact-form-wrap">
                 <p class="underP">Send me a message, and let’s make it happen!</p>
 
-                 <form class="contact-form">
+                 <form class="contact-form" action="https://formspree.io/f/mdaaanwv"
+  method="POST">
                         <section class="form-group">
                             <label id="name-label" for="name">Name</label>
-                            <input id="name" class="form-control" type="text" placeholder="Your name" required>
+                            <input id="name" name="name" class="form-control" type="text" placeholder="Your name" required>
                         </section>
                         <section class="form-group">
                             <label id="email-label" for="email">Email</label>
-                            <input id="email" class="form-control" type="email" placeholder="name@email.com" required>
+                            <input id="email" name="email" class="form-control" type="email" placeholder="name@email.com" required>
                         </section>
                         <section class="form-group">
                             <label for="comments">Message</label>
-                            <textarea id="comments" class="form-control" name="comments" placeholder="Type your message here" rows="5" cols="40"></textarea>
+                            <textarea id="comments" name="message" class="form-control" name="comments" placeholder="Type your message here" rows="5" cols="40" required></textarea>
                         </section>
                         <section class="form-group">
-                            <button id="submit" class="form-control submit-button">Submit</button>
+                            <button id="submit" type="submit" class="form-control submit-button">Submit</button>
                         </section>
 
                     </form>              
@@ -337,7 +338,7 @@
     <footer> 
         <section>
             <div id="logo"><a href="/">./iryna</a></div>
-            <p>Handcrafted by me &copy; twentytwentyfive</p>
+            <p>Handcrafted by me &copy; twentytwentysix</p>
         </section>      
         
     </footer>
