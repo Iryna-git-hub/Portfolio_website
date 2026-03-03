@@ -330,18 +330,6 @@ main h2 span {
   animation-timeline: view();
   animation-range: entry 10% cover 50%;
 }
-/*
-.about-img img {
-  position: absolute;
-  max-width: 40%;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-  transition: transform 0.4s ease;
-}
-
-.about-img img:hover {
-  transform: scale(1.05);
-}
-*/
 
 .row {
   display: flex;
