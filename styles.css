@@ -621,7 +621,7 @@ input:-webkit-autofill {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   #logo {
     font-size: 2rem;
   }
@@ -711,9 +711,7 @@ input:-webkit-autofill {
   .arrow-icon {
     transform: rotate(90deg);
   }
-}
 
-@media (max-width: 767px) {
   .menu-toggle {
     display: block;
   }
@@ -722,7 +720,7 @@ input:-webkit-autofill {
 /* Submit form message*/
 #form-status {
   margin-top: 0.5rem;
-  min-height: 1.2em; /* reserve a little space so layout doesn't jump */
+  min-height: 1.2em;
   transition: opacity 180ms ease;
   opacity: 1;
   font-size: 0.95rem;
