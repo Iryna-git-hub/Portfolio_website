@@ -14,99 +14,88 @@ AI improvements list:
 
 ###### **ASCII structure diagram**
 ```
-Portfolio_website/
-
+📦 Portfolio_website/
 │
-
-├── index.html
-
-├── styles.css
-
-├── reset.css
-
-├── script.js
-
-├── README.md
-
+├── 📄 index.html
+│   └── Structure:
+│       ├── <head>
+│       │   ├── Meta tags
+│       │   ├── CSS links (reset.css, styles.css)
+│       │   └── Google Fonts
+│       └── <body>
+│           ├── Particle container
+│           ├── Header (Navigation + Hero)
+│           ├── Main (About, Skills, Projects, Contact)
+│           └── Footer (Links + Copyright)
 │
+├── 🎨 styles.css (615 lines)
+│   ├── Root styles
+│   ├── Typography (h1, h2, p, headers)
+│   ├── Layout (flex, grid, sections)
+│   ├── Components (buttons, forms, cards)
+│   ├── Animations (fade-in, transitions)
+│   ├── Responsive (breakpoints at 768px, 1024px)
+│   └── Particles (background animation)
+│
+├── ✨ reset.css
+│   ├── Box-sizing reset
+│   ├── Margin/Padding reset
+│   ├── Font inheritance
+│   ├── Link styling
+│   └── List styling
+│
+├── ⚙️ script.js (95 lines)
+│   ├── Particle Animation System
+│   │   ├── createParticle()
+│   │   ├── resetParticle()
+│   │   └── animateParticle()
+│   ├── Mobile Menu Toggle
+│   │   └── menuToggle listeners
+│   └── Contact Form Handler
+│       ├── Validation
+│       ├── Formspree submission
+│       └── Status messages
+│
+├── 📄 README.md
+│   ├── Features list
+│   ├── Tech stack
+│   ├── Installation guide
+│   ├── Customization
+│   ├── Deployment options
+│   └── Contact info
+│
+└── 🖼️ images/
+    ├── favicon.ico
+    ├── portfolio1.png (Project images)
+    ├── portfolio2.png
+    └── portfolio3.png
 
-└── images/
 
-═══════════════════════════════════════
+┌─────────────────────────────────────────────┐
+│         Portfolio Website                   │
+└─────────────────────────────────────────────┘
+                    │
+        ┌───────────┼───────────┐
+        │           │           │
+    ┌───▼───┐   ┌──▼──┐   ┌───▼────┐
+    │Header │   │Main │   │Footer  │
+    └───┬───┘   └──┬──┘   └───┬────┘
+        │          │           │
+    ┌───┴──────────┼──────────┴───┐
+    │              │               │
+┌───▼──┐       ┌──▼──────────┐  ┌─▼──────┐
+│Nav   │       │ 4 Sections  │  │Links   │
+├──────┤       ├─────────────┤  ├────────┤
+│Logo  │       │ About       │  │LinkedIn│
+│Menu  │       │ Skills      │  │GitHub  │
+│Toggle│       │ Projects    │  │Behance │
+└──────┘       │ Contact     │  │Email   │
+               └─────────────┘  └────────┘
 
-**HTML Structure:**
-
-<html>
-
-&nbsp; ├── <header>
-
-&nbsp; │ ├── Navigation (Desktop + Mobile)
-
-&nbsp; │ └── Hero Section
-
-&nbsp; │
-
-&nbsp; ├── <main>
-
-&nbsp; │ ├── About Section
-
-&nbsp; │ ├── Skills Section
-
-&nbsp; │ ├── Projects Section (3 projects)
-
-&nbsp; │ └── Contact Form
-
-&nbsp; │
-
-&nbsp; └── <footer>
-
-&nbsp; └── Social Links
-
-═══════════════════════════════════════
-
-**CSS Layers:**
-
-reset.css → styles.css → animations
-
-&nbsp; ↓ ↓ ↓
-
-HTML Layout \& Color Fade/Particles
-
-═══════════════════════════════════════
-
-**JavaScript Features:**
-
-✓ Particle Animation
-
-✓ Mobile Menu Toggle
-
-✓ Contact Form Validation
-
-✓ Formspree Integration
-
-✓ Status Messages
-
-═══════════════════════════════════════
-
-**Data Flow:**
-
-User clicks form
-
-&nbsp; ↓
-
-Validation
-
-&nbsp; ↓
-
-Fetch to Formspree
-
-&nbsp; ↓
-
-Success/Error message
-
-**Reflect on learnings:**
 ```
 ---
+
+**Reflect on learnings:**
 
 1. Thanks to a AI suggestion, I learned how the noopener and noreferrer attributes work for links that open in a new tab, and I improved both security against tabnabbing and privacy protection for such links.
 2. I use Formspree to send messages from my website directly to my email, so I don’t have my own backend. When I enabled this option, I didn’t notice that I hadn’t removed the previous name attribute and had accidentally added a duplicate. Thanks to AI pointing out the duplicated name attribute in the <textarea>, I learned more about how the message submission works in this setup and corrected my HTML to improve its validity.
