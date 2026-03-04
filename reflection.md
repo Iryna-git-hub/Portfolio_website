@@ -13,7 +13,7 @@ AI improvements list:
 ---
 
 ###### **ASCII structure diagram**
-
+```
 Portfolio_website/
 
 │
@@ -105,7 +105,7 @@ Fetch to Formspree
 Success/Error message
 
 **Reflect on learnings:**
-
+```
 ---
 
 1. Thanks to a AI suggestion, I learned how the noopener and noreferrer attributes work for links that open in a new tab, and I improved both security against tabnabbing and privacy protection for such links.
