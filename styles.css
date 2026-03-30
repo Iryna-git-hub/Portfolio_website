@@ -114,7 +114,6 @@ nav.menu {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  flex-wrap: wrap;
   flex-direction: column;
   align-content: center;
   height: 90%;
