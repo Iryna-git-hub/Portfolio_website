@@ -72,24 +72,38 @@ const menuToggle = document.getElementById("menuToggle");
 const mobileMenu = document.getElementById("mobileMenu");
 const menuLinks = mobileMenu.querySelectorAll("a");
 
+function closeMobileMenu() {
+  mobileMenu.classList.remove("open");
+  menuToggle.classList.remove("open");
+  menuToggle.setAttribute("aria-expanded", "false");
+  menuToggle.setAttribute("aria-label", "Open navigation menu");
+}
+
 // Toggle menu open/close when clicking the button
 menuToggle.addEventListener("click", () => {
-  menuToggle.classList.toggle("open");
-  mobileMenu.classList.toggle("open");
+  const isOpen = mobileMenu.classList.toggle("open");
+
+  menuToggle.classList.toggle("open", isOpen);
+  menuToggle.setAttribute("aria-expanded", String(isOpen));
+  menuToggle.setAttribute(
+    "aria-label",
+    isOpen ? "Close navigation menu" : "Open navigation menu"
+  );
 });
 
 // Close the menu when any link inside the menu is clicked
 menuLinks.forEach((link) => {
-  link.addEventListener("click", () => {
-    mobileMenu.classList.remove("open");
-    menuToggle.classList.remove("open");
-  });
+  link.addEventListener("click", closeMobileMenu);
 });
 
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("contact-form");
   const status = document.getElementById("form-status");
+  if (!form || !status) return;
+
   const submitBtn = form.querySelector("button[type='submit']");
+  if (!submitBtn) return;
+  const submitBtnText = submitBtn.textContent;
 
   form.addEventListener("submit", async (e) => {
     e.preventDefault();
@@ -120,14 +134,14 @@ document.addEventListener("DOMContentLoaded", () => {
       } else {
         // attempt to read JSON error details
         const data = await res.json().catch(() => ({}));
-        const message = data.error || "Oops — something went wrong. Please try again.";
+        const message = data.error || "Oops - something went wrong. Please try again.";
         showStatus(message, "error");
       }
     } catch (err) {
-      showStatus("Network error — please check your connection and try again.", "error");
+      showStatus("Network error - please check your connection and try again.", "error");
     } finally {
       submitBtn.disabled = false;
-      submitBtn.textContent = "Send";
+      submitBtn.textContent = submitBtnText;
     }
   });
 

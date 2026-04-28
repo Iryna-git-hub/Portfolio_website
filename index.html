@@ -17,7 +17,7 @@
     <div class="particles-container" id="particles-container"></div>
     <header class="hero-container">
         <section class="top-wrap main-hero-padding">
-            <div id="logo"><a href="#">./iryna</a></div>        
+            <div class="logo"><a href="#">./iryna</a></div>        
             <nav class="menu">
                 <ul>      
                     <li><a href="#about">About</a></li>      
@@ -26,11 +26,11 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
-            <div class="menu-toggle" id="menuToggle">
+            <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation menu" aria-controls="mobileMenu" aria-expanded="false">
                 <span></span>
                 <span></span>
                 <span></span>
-            </div>
+            </button>
             <nav class="mobile-menu" id="mobileMenu">
                 <ul>
                     <li><a href="#about">About</a></li>      
@@ -231,28 +231,33 @@
             <div class="project-wrap flex-wrap"><!--Project-1-->
                 <div class="project project-left">
                     <div class="project-info">
-                        <h3 class="project-title">Weather App</h3>
-                        <p class="project-description">This Weather App is a responsive web application built with HTML5, CSS3, and JavaScript that fetches real-time weather data from the OpenWeatherMap API. It allows users to view current weather conditions for their location or any city, with dynamic updates and error handling for invalid inputs.</p>
+                        <h3 class="project-title">Frog Hunter - Memory Game</h3>
+                        <p class="project-description">Frog Hunter is a full-stack browser memory game built with HTML, CSS, JavaScript, Node.js, Express, and SQLite. The frontend handles game state, matching logic, timer, difficulty levels, and UI feedback, while the backend serves card data through a REST API. The project demonstrates API integration, and clear separation between frontend logic and backend data storage.</p>
                         <ul class="tool-list" aria-label="Tools used">
                             <li>HTML5</li>
                             <li>CSS3</li>
                             <li>JavaScript</li>
-                            <li>OpenWeatherMap API</li>
+                            <li>Node.js</li>
+                            <li>Express.js</li>
+                            <li>SQLite</li>
+                            <li>npm</li>
+                            <li>Postman</li>
+                            <li>Memory Game Logic</li>
                             <li>Git</li>
                             <li>GitHub</li>
                             <li>Responsive Design</li>
                         </ul>
-                        <a href="https://iryna-git-hub.github.io/Weather_app" target="_blank" rel="noopener noreferrer">
+                        <a href="https://froghunter.onrender.com/" target="_blank" rel="noopener noreferrer">
                             <div class="project-demo">Demo</div>
                         </a>
-                        <a href="https://github.com/Iryna-git-hub/Weather_app" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/Iryna-git-hub/FrogHunter" target="_blank" rel="noopener noreferrer">
                             <div class="project-demo">Source</div>
                         </a>
                     </div>
                     <div class="project-image-container">
-                        <a href="https://iryna-git-hub.github.io/Weather_app" target="_blank" rel="noopener noreferrer">
+                        <a href="https://froghunter.onrender.com/" target="_blank" rel="noopener noreferrer">
                             <div class="project-image-image project-first">
-                                <img src="images/portfolio_img_1.png" alt="Weather App preview">
+                                <img src="images/frogHunter.png" alt="Frog Hunter memory game preview">
                             </div>
                         </a>
                     </div>                    
@@ -291,33 +296,28 @@
             <div class="project-wrap flex-wrap"><!--Project-3-->
                 <div class="project project-left">
                     <div class="project-info">
-                        <h3 class="project-title">Frog Hunter - Memory Game</h3>
-                        <p class="project-description">A playful memory game where players match hidden frog cards and test their focus through a simple, responsive browser experience.</p>
+                        <h3 class="project-title">Weather App</h3>
+                        <p class="project-description">This Weather App is a responsive web application built with HTML5, CSS3, and JavaScript that fetches real-time weather data from the OpenWeatherMap API. It allows users to view current weather conditions for their location or any city, with dynamic updates and error handling for invalid inputs.</p>
                         <ul class="tool-list" aria-label="Tools used">
                             <li>HTML5</li>
                             <li>CSS3</li>
                             <li>JavaScript</li>
-                            <li>Node.js</li>
-                            <li>Express.js</li>
-                            <li>SQLite</li>
-                            <li>npm</li>
-                            <li>Postman</li>
-                            <li>Memory Game Logic</li>
+                            <li>OpenWeatherMap API</li>
                             <li>Git</li>
                             <li>GitHub</li>
                             <li>Responsive Design</li>
                         </ul>
-                        <a href="https://froghunter.onrender.com/" target="_blank" rel="noopener noreferrer">
+                        <a href="https://iryna-git-hub.github.io/Weather_app" target="_blank" rel="noopener noreferrer">
                             <div class="project-demo">Demo</div>
                         </a>
-                        <a href="https://github.com/Iryna-git-hub/FrogHunter" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/Iryna-git-hub/Weather_app" target="_blank" rel="noopener noreferrer">
                             <div class="project-demo">Source</div>
                         </a>
                     </div>
                     <div class="project-image-container">
-                        <a href="https://froghunter.onrender.com/" target="_blank" rel="noopener noreferrer">
+                        <a href="https://iryna-git-hub.github.io/Weather_app" target="_blank" rel="noopener noreferrer">
                             <div class="project-image-image">
-                                <img src="images/frogHunter.png" alt="Frog Hunter memory game preview">
+                                <img src="images/portfolio_img_1.png" alt="Weather App preview">
                             </div>
                         </a>
                     </div>                    
@@ -379,7 +379,7 @@
                         </section>
                         <section class="form-group">
                             <label for="comments">Message</label>
-                            <textarea id="comments" name="message" class="form-control" name="comments" placeholder="Type your message here" rows="5" cols="40" required></textarea>
+                            <textarea id="comments" name="message" class="form-control" placeholder="Type your message here" rows="5" cols="40" required></textarea>
                         </section>
                         <section class="form-group">
                             <button id="submit" type="submit" class="form-control submit-button">Submit</button>
@@ -396,7 +396,7 @@
     </main>
     <footer> 
         <section>
-            <div id="logo"><a href="#">./iryna</a></div>
+            <div class="logo"><a href="#">./iryna</a></div>
             <p>Handcrafted by me &copy; twentytwentysix</p>
         </section>      
         
